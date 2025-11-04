@@ -27,7 +27,7 @@ public interface CarRental {
      * Przypisuje samochód do klienta (wypożycza go).
      * Na razie nie sprawdzamy, czy samochód jest już wypożyczony (choć powinniśmy!)
      */
-    void rentCar(String customerId, String carId);
+    void rentCar(String carId, String customerId);
 
     /**
      * Zwraca samochód do salonu.
