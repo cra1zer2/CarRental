@@ -1,21 +1,34 @@
-# CarRental - Car Rental System
+# Car Rental System 🚗
 
-Welcome to the `CarRental` project!
+**Status:** ✅ School Project Completed
 
-The goal of this project is to implement a simple car rental management system. Your task is to create a class that implements the `CarRental` interface.
+A simple backend system for managing a car rental service, implementing core business logic for inventory and rentals.
 
-## Requirements
+## 🎯 Functionality Accomplished
 
-*   Java 25
+*   **Car Management**:
+    *   Add new vehicles (Brand, Model, License Plate).
+    *   Remove vehicles from the fleet.
+    *   Track availability status.
+*   **Customer Management**:
+    *   Register and remove customers.
+    *   Auto-generate unique Customer IDs.
+*   **Rental Operations**:
+    *   **Rent**: securely link available cars to customers.
+    *   **Return**: process returns and free up vehicle availability.
+    *   **Validation**: Error handling for invalid IDs, null inputs, or double-booking attempts.
+*   **Quality Assurance**:
+    *   Full Unit Test coverage using **JUnit**.
+
+## 🛠️ Tech Stack
+
+*   Java
 *   Maven
+*   JUnit 5
 
-## Instructions
+## 🚀 How to Run
 
-- [ ] Open the file `src/main/java/org/example/CarRental.java`.
-- [ ] Familiarize yourself with the methods you need to implement. The comments in the code will guide you on what each method should do.
-- [ ] Create a new class (e.g., `CarRentalImpl`) that implements this interface.
-- [ ] Write code for each method to meet the business requirements.
+To run the tests and verify functionality:
 
-## Testing
-
-The project includes the JUnit 5 dependency. You can (and should!) write unit tests to verify the correctness of your solution.
+```bash
+mvn test
