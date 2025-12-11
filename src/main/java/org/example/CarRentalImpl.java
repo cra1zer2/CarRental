@@ -42,10 +42,31 @@ public class CarRentalImpl implements CarRental {
 
     @Override
     public void rentCar(String carId, String customerId) {
+        if (carId == null || customerId == null) {
+            throw new IllegalArgumentException("All parameters must be non-null");
+        }
+        if (cars.get(carId) == null) {
+            throw new IllegalArgumentException("Car with id " + carId + " does not exist");
+        }
+        if (customers.get(customerId) == null) {
+            throw new IllegalArgumentException("Customer with id " + customerId + " does not exist");
+        }
+        Car car = cars.get(carId);
+        if (car.isRented()){
+            throw new IllegalArgumentException("Car with id " + carId + " is already rented");
+        }
+        car.setRentedBy(customerId);
+        System.out.println("Rent Car with id " + carId + " is now rented");
     }
 
     @Override
     public void returnCar(String carId) {
-
+        Car car = cars.get(carId);
+        if (car.isRented()){
+            car.setRentedBy(null);
+        }
+        else {
+            throw new IllegalArgumentException("Car with id " + carId + " is not rented");
+        }
     }
 }
