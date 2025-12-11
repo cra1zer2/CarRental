@@ -11,10 +11,10 @@ The goal of this project is to implement a simple car rental management system. 
 
 ## Instructions
 
-- [ ] Open the file `src/main/java/org/example/CarRental.java`.
-- [ ] Familiarize yourself with the methods you need to implement. The comments in the code will guide you on what each method should do.
-- [ ] Create a new class (e.g., `CarRentalImpl`) that implements this interface.
-- [ ] Write code for each method to meet the business requirements.
+- [X] Open the file `src/main/java/org/example/CarRental.java`.
+- [X] Familiarize yourself with the methods you need to implement. The comments in the code will guide you on what each method should do.
+- [X] Create a new class (e.g., `CarRentalImpl`) that implements this interface.
+- [X] Write code for each method to meet the business requirements.
 
 ## Testing
 
